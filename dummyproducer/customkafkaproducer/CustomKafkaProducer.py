@@ -1,5 +1,5 @@
 import confluent_kafka
-from dummyproducer.Config.configuration import getConfigForEnv
+from dummyproducer.config.configuration import getConfigForEnv
 
 class CustomKafkaProducer:
     def __init__(self):

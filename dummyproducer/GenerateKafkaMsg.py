@@ -1,4 +1,4 @@
-from dummyproducer.CustomKafkaProducer.CustomKafkaProducer import CustomKafkaProducer
+from dummyproducer.customkafkaproducer.CustomKafkaProducer import CustomKafkaProducer
 import arrow
 
 def startKakfkaProducer():
@@ -13,7 +13,6 @@ def startKakfkaProducer():
                 print("skipping the header")
                 cnt=cnt+1
             else:
-                print(line)
                 utc = str(arrow.now().timestamp)
                 producer.produce(kafka_msg=line,kafka_key=utc)
 
