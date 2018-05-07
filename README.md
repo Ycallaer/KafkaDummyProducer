@@ -19,5 +19,5 @@ Install the prerequisites
 When you are done, do not forget to change the broker ip in the config class.
 If you want to use localhost do not forgot to port forward the cluster ip:port
 
-### 1. Build docker images and upload to repo
-If you are working with an ide, the starting point is in GenerateKafkaMsg.py
+### 1. Starting point
+The starting point is in GenerateKafkaMsg.py
