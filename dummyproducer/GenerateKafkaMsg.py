@@ -4,7 +4,7 @@ import arrow
 def startKakfkaProducer():
     print("Initializing the kafka producer")
     producer=CustomKafkaProducer()
-    filepath="/Users/yvescallaert/Downloads/multiclass_datasets/filings.csv"
+    filepath="../resources/gunviolence.csv"
 
     with open(filepath,'r') as filep:
         cnt=0
@@ -13,6 +13,7 @@ def startKakfkaProducer():
                 print("skipping the header")
                 cnt=cnt+1
             else:
+                print(line)
                 utc = str(arrow.now().timestamp)
                 producer.produce(kafka_msg=line,kafka_key=utc)
 
