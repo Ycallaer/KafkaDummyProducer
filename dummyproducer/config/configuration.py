@@ -7,8 +7,8 @@ config = {
         'fetch.wait.max.ms': 60000,
         'session.timeout.ms': 180000,
         'heartbeat.interval.ms': 60000,
-        'queue.buffering.max.ms': 1,
-        'queue.buffering.max.messages': 1000
+        'queue.buffering.max.ms': 0,
+        'queue.buffering.max.messages': 15000
     }
 }
 
